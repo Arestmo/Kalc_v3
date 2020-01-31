@@ -53,6 +53,8 @@
             // Check_add
             // 
             this.Check_add.AutoSize = true;
+            this.Check_add.Checked = true;
+            this.Check_add.CheckState = System.Windows.Forms.CheckState.Checked;
             this.Check_add.Location = new System.Drawing.Point(12, 63);
             this.Check_add.Name = "Check_add";
             this.Check_add.Size = new System.Drawing.Size(45, 17);

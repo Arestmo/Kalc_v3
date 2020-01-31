@@ -17,14 +17,14 @@ namespace Kalc_v3
             InitializeComponent();
         }
 
-        String result = "";
+        String Result = "";
 
         private void Check_add_CheckedChanged(object sender, EventArgs e)
         {
             if(Check_add.Checked)
             {
-                int val1 = Get_value(Text_val1);
-                int val2 = Get_value(Text_val2);
+                int Val1 = Get_value(Text_val1);
+                int Val2 = Get_value(Text_val2);
 
                 //Place your code here
             }
@@ -34,8 +34,8 @@ namespace Kalc_v3
         {
             if(Check_substract.Checked)
             {
-                int val1 = Get_value(Text_val1);
-                int val2 = Get_value(Text_val2);
+                int Val1 = Get_value(Text_val1);
+                int Val2 = Get_value(Text_val2);
 
                 //Place your code here
             }
@@ -45,8 +45,8 @@ namespace Kalc_v3
         {
             if (Check_multiply.Checked)
             {
-                int val1 = Get_value(Text_val1);
-                int val2 = Get_value(Text_val2);
+                int Val1 = Get_value(Text_val1);
+                int Val2 = Get_value(Text_val2);
 
                 //Place your code here
             }
@@ -56,8 +56,8 @@ namespace Kalc_v3
         {
             if (Check_divide.Checked)
             {
-                int val1 = Get_value(Text_val1);
-                int val2 = Get_value(Text_val2);
+                int Val1 = Get_value(Text_val1);
+                int Val2 = Get_value(Text_val2);
 
                 //Place your code here
             }
@@ -65,13 +65,12 @@ namespace Kalc_v3
 
         private void Button_calc_Click(object sender, EventArgs e)
         {
-            Result_text.Text = result;
+            Result_text.Text = Result;
         }
 
         private int Get_value(TextBox text)
         {
-            int value = int.Parse(text.Text);
-            return value;
+            return int.Parse(text.Text); ;
         }
     }
 }
