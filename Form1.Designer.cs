@@ -33,11 +33,11 @@
             this.Check_substract = new System.Windows.Forms.CheckBox();
             this.Check_multiply = new System.Windows.Forms.CheckBox();
             this.Check_divide = new System.Windows.Forms.CheckBox();
-            this.Result_text = new System.Windows.Forms.TextBox();
             this.Text_val1 = new System.Windows.Forms.TextBox();
             this.Text_val2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // Button_calc
@@ -53,8 +53,6 @@
             // Check_add
             // 
             this.Check_add.AutoSize = true;
-            this.Check_add.Checked = true;
-            this.Check_add.CheckState = System.Windows.Forms.CheckState.Checked;
             this.Check_add.Location = new System.Drawing.Point(12, 63);
             this.Check_add.Name = "Check_add";
             this.Check_add.Size = new System.Drawing.Size(45, 17);
@@ -96,14 +94,6 @@
             this.Check_divide.UseVisualStyleBackColor = true;
             this.Check_divide.CheckedChanged += new System.EventHandler(this.Check_divide_CheckedChanged);
             // 
-            // Result_text
-            // 
-            this.Result_text.Location = new System.Drawing.Point(12, 109);
-            this.Result_text.Multiline = true;
-            this.Result_text.Name = "Result_text";
-            this.Result_text.Size = new System.Drawing.Size(288, 75);
-            this.Result_text.TabIndex = 5;
-            // 
             // Text_val1
             // 
             this.Text_val1.Location = new System.Drawing.Point(13, 37);
@@ -136,16 +126,24 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Value 2";
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(12, 109);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(288, 121);
+            this.listBox1.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(319, 200);
+            this.ClientSize = new System.Drawing.Size(319, 240);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Text_val2);
             this.Controls.Add(this.Text_val1);
-            this.Controls.Add(this.Result_text);
             this.Controls.Add(this.Check_divide);
             this.Controls.Add(this.Check_multiply);
             this.Controls.Add(this.Check_substract);
@@ -165,11 +163,11 @@
         private System.Windows.Forms.CheckBox Check_substract;
         private System.Windows.Forms.CheckBox Check_multiply;
         private System.Windows.Forms.CheckBox Check_divide;
-        private System.Windows.Forms.TextBox Result_text;
         private System.Windows.Forms.TextBox Text_val1;
         private System.Windows.Forms.TextBox Text_val2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
